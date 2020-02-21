@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/63b0e526bd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize/norm.css">
+    <link rel="stylesheet" href="./css/animate/animate.min.css">
+    <title>Arlo</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="./js/vegas.min.css">
+
+</head>
+
+
+<body>
+    <container class="container">
+        <header class="header">
+            <div class="left_side">
+                <div class="nav_bar">
+                    <div class="logo">
+                        <a href="#"><img src="http://frenify.com/envato/marketify/html/arlo/1/img/logo/desktop-logo.png"
+                                alt="logo"></a>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">home</a></li>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">services</a></li>
+                            <li><a href="#">portfolio</a></li>
+                            <li><a href="#">news</a></li>
+                            <li><a href="#">contact</a></li>
+                        </ul>
+                        <button class="back">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                    </div>
+                    <div class="social">
+                        <ul>
+                            <li><i class="fab fa-facebook-f"></i></li>
+                            <li><i class="fab fa-twitter"></i></li>
+                            <li><i class="fab fa-linkedin-in"></i></li>
+                            <li><i class="fab fa-instagram"></i></li>
+                            <li><i class="fab fa-behance"></i></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            
+        </header>
+        
+            <div class="right_side">
+                <div class="top">
+                <div class="main_content">
+                    
+                    <div class="author_photo"> <img src="http://frenify.com/envato/marketify/html/arlo/1/img/hero/img.jpg"> </div>
+                <h3 id="name">alan <span class="auhtor_name">michaelis</span></h3> 
+                <div class="bounce animated bounce"> 
+                    <a href="#"><i class="fas fa-angle-double-down"></i></a>
+                </div>
+                </div>
+            </div>
+              
+        
+        </div>
+    </container>
+    <section></section>
+    <script src="./js/vegas.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.1.18/jquery.backstretch.min.js"></script> -->
+    <script>
+        $(function() {
+    $('.right_side').vegas({
+        slides: [
+            { src:'img/1.jpg'},
+            { src:'img/2.jpg' },
+            { src:'img/3.jpg' }
+        ]
+    });
+});
+    </script>
+    <!-- <script>
+         $(".right_side").backstretch([
+    "img/1.jpg",
+    "img/2.jpg",
+    "img/3.jpg"    
+  ], {});
+
+    </script> -->
+</body>
+
+</html>

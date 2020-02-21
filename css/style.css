@@ -1,0 +1,157 @@
+*{font-family: 'Montserrat', sans-serif;
+    list-style: none;
+}
+body{overflow-x: hidden;}
+/* ========header==== */
+
+.header{width: 280px;
+height: 100vh;
+background-color: #041230;
+position: fixed;
+}
+
+.logo{
+    width: 100%;
+    height: 230px;
+    position: relative;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+.logo img{position: absolute;
+top:50%;
+left: 50%;
+transform: translate(-50% ,-50%);}
+
+.menu{width: 100%;
+height: auto;
+padding-top: 20px;
+position: relative;
+}
+
+.menu a{list-style: none;
+text-transform: uppercase;
+text-decoration: none;
+color: #ffff;
+padding-bottom: 30px;
+padding-left: 10px;
+display: inline-block;
+font-weight: 500;
+position: relative;}
+
+.menu a:before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0px;
+    height: 2px;
+    background-color: #E3872D;
+    transition: 0.3s ease-out ;
+    top:6px;
+    left:calc(100% + 5px);
+    
+}
+.menu a:hover{color:#E3872D;}
+.menu a:hover:before{color: #E3872D;
+    width: 35px;}
+
+.social ul{ display: flex;}
+.social li{margin-left: 20px;}
+.social li:first-child{margin: 0;}
+
+.fab{color: #ffff;}
+.fab:hover{color:#E3872D;
+cursor: pointer;}
+
+.back{background-color: #E3872D;
+border: none;
+position: absolute;
+right: 0;
+bottom: 20%;}
+
+.fas {color:#fff;
+padding: 5px 5px 5px 8px;}
+
+.right_side{
+  position: relative;
+width: 100%;
+height: 100vh;
+margin-left: 280px;
+overflow-x: hidden;
+background-color: transparent;
+/* background-image: url(http://frenify.com/envato/marketify/html/arlo/1/img/hero/1.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+background-attachment: fixed; */
+
+
+}
+.main_content{background-color: transparent;}
+.top{position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  background-color: rgba(7,23,55,.8);
+z-index:1;}
+.author_photo img{
+    border-radius: 100%;
+    border:8px solid grey;
+    width: 200px;
+    height: 200px;
+}
+#name{text-transform: uppercase;
+font-weight: 300;
+font-size: 50px;}
+.auhtor_name{color:#E3872D}
+.main_content{display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+width: calc(85% - 100px);
+padding-top: 3%;}
+
+.bounce{position: absolute;
+bottom:5%
+}
+.fa-angle-double-down{font-size: 24px;}
+@keyframes bounce {
+    from,
+    20%,
+    53%,
+    80%,
+    to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  
+    40%,
+    43% {
+      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -webkit-transform: translate3d(0, -30px, 0);
+      transform: translate3d(0, -30px, 0);
+    }
+  
+    70% {
+      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -webkit-transform: translate3d(0, -15px, 0);
+      transform: translate3d(0, -15px, 0);
+    }
+  
+    90% {
+      -webkit-transform: translate3d(0, -4px, 0);
+      transform: translate3d(0, -4px, 0);
+    }
+  }
+  .bounce {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+    animation: bounce 2s infinite;
+  }
+section{height: 400px;}
